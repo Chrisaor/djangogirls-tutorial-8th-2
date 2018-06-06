@@ -9,5 +9,11 @@
 </head>
 <body>
 <h1>Djangogirls blog</h1>
+
+{% for post in posts %}
+<p>{{ post.title }}</p>
+<p>{{ post.text }}</p>
+
+{% endfor %}
 </body>
 </html>
